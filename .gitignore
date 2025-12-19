@@ -1,0 +1,15 @@
+# Ignorar cualquier carpeta .venv
+.venv/
+**/.venv/
+
+# Ignorar cualquier carpeta __pycache__
+__pycache__/
+**/__pycache__/
+
+# Ignorar archivos .pyc
+*.pyc
+**/*.pyc
+
+# Ignorar cualquier carpeta .idea (PyCharm / IntelliJ)
+.idea/
+**/.idea/
