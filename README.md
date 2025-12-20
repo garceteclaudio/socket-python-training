@@ -1,4 +1,7 @@
 # Crear entorno virtual
+
+
+```bash
 python -m venv .venv
 
 .venv\Scripts\activate
@@ -6,12 +9,15 @@ python -m venv .venv
 pip install -r requirements.txt
 
 pip list
+```
 
 
 # Redes
 
+```bash
 netstat -ano | findstr :5555
 
-tasklist | findstr 16132
+tasklist | findstr 14268
 
-taskkill /PID 16132 /F
+taskkill /PID 14268 /F
+```

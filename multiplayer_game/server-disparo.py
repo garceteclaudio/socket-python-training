@@ -76,26 +76,41 @@ def handle_client(conn, pid):
 
     try:
         while True:
+            #Recibir datos del cliente
             data = conn.recv(4096)
             if not data:
                 break
-
+            # Convertir el paquete de bytes a Python
+            #{
+            #    "pos": (x, y),
+            #    "bullets": [ ... ]
+            #}            
             packet = pickle.loads(data)
 
-            # Actualizar posición
+
+            # Actualizar posición del jugador
             players[pid] = packet["pos"]
 
-            # Añadir nuevas balas
+            #Añadir nuevas balas enviadas por ese jugador
+            #{
+            #    "owner": pid,
+            #    "x": ...,
+            #    "y": ...,
+            #    "dx": ...,
+            #    "dy": ...
+            #}            
             for b in packet["bullets"]:
                 bullets.append(b)
 
-            # Preparar estado para enviar
+            # Preparar estado para enviar,
+            # Este paquete contiene T ODO lo que el cliente necesita para dibujar:
+            # posiciones de todos los jugadores, posiciones de todas las balas, jugadores dañados
             full_state = {
                 "players": players,
                 "bullets": bullets,
                 "damaged": damaged
             }
-
+            # Convertir el paquete a bytes
             blob = pickle.dumps(full_state)
 
             # Enviar estado a todos los clientes
