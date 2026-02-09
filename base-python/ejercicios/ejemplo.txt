@@ -1,0 +1,24 @@
+
+Fecha de compra: 06/02/2026
+Criptomoneda: BTC
+Monto invertido (USDT): 2000
+Valor al momento de la compra: 75000.0 USDT
+Cantidad comprada: 0.02667
+
+Fecha de compra: 06/02/2026
+Criptomoneda: BTC
+Monto invertido (USDT): 1000
+Valor al momento de la compra: 67000.0 USDT
+Cantidad comprada: 0.01493
+
+Fecha de compra: 07/02/2026
+Criptomoneda: BTC
+Monto invertido (USDT): 2000
+Valor al momento de la compra: 62000.0 USDT
+Cantidad comprada: 0.03226
+
+Fecha de compra: 07/02/2026
+Criptomoneda: BTC
+Monto invertido (USDT): 3000
+Valor al momento de la compra: 55000.0 USDT
+Cantidad comprada: 0.05455
